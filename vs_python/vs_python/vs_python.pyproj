@@ -5,7 +5,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>09640503-ff27-4dc2-9879-63e680f20ed3</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>vs_python.py</StartupFile>
+    <StartupFile>multithreading_map.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -22,6 +22,21 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="list.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="multithreading_map.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="multithread_thread.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="multithread_threading.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="numpy_test.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="vs_python.py" />
   </ItemGroup>
   <PropertyGroup>
