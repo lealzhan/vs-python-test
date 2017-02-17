@@ -1,18 +1,25 @@
-from multiprocessing.dummy import Pool as ThreadPool
+from multiprocessing.dummy import Pool as ThreadPool #thread pool
+#from multiprocessing import Pool as ThreadPool     #process pool
+
+import time
 
 #------- demo 0 ---------
 def worker(x):
 	"""thread worker funciotn"""
-	
+	print "worker start" 
+	a=0;
+	while 1>0 :
+		a += 1
+		a -= 1
+		a /= 1
 	print 'worker'
-def start_worker():
-    th.start_new_thread(worker,())
 
-a=[0,1,2]
-pool = ThreadPool(1)
-results = pool.map(worker,a)
+testTP=range(0,100)
+pool = ThreadPool(5)
+results = pool.map(worker, testTP)
 pool.close()
 pool.join()
 
+# no gpu usage improved...
 
 #---------------------

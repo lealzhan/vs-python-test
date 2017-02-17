@@ -5,7 +5,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>09640503-ff27-4dc2-9879-63e680f20ed3</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>multithreading_map.py</StartupFile>
+    <StartupFile>multiprocess.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -23,6 +23,9 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="list.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="multiprocess.py">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="multithreading_map.py">
