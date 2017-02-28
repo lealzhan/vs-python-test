@@ -217,3 +217,61 @@ if __name__ == '__main__':
     shared_array = np.ctypeslib.as_array(shared_array_base.get_obj())
     shared_array = shared_array.reshape(10, 10)
     print shared_array
+
+
+
+## http://stackoverflow.com/questions/5549190/is-shared-readonly-data-copied-to-different-processes-for-python-multiprocessing/5550156#5550156
+#import multiprocessing
+#import ctypes
+#import numpy as np
+
+##-- edited 2015-05-01: the assert check below checks the wrong thing
+##   with recent versions of Numpy/multiprocessing. That no copy is made
+##   is indicated by the fact that the program prints the output shown below.
+### No copy was made
+###assert shared_array.base.base is shared_array_base.get_obj()
+
+##lock = multiprocessing.Lock()
+
+#shared_array = None
+
+#a = np.array(range(0,10))
+
+#def init(shared_array, l):
+#    global s_a
+#    s_a = shared_array
+#    global lock #make your lock instance global in all the child workers
+#    lock = l
+
+#def test(xx):
+#	global yy
+#	yy = xx
+#	yy[0][0] = 10
+	 
+## Parallel processing
+#def my_func(i):
+##    shared_array[i, :] = i * a[i]
+#	#for x in range(100000):
+#	#	shared_array[0, :] = i
+#	for x in range(1000):
+#		m = 0/1
+#		m = 0*1
+#		m = 0/1
+
+#	#lock.acquire()
+#	for x in range(1000):
+#		s_a[0, 0] = s_a[0, 0] - i
+#		s_a[0, 0] = s_a[0, 0] + i
+#	#lock.release()
+
+#if __name__ == '__main__':
+#    shared_array_main = np.array([[1,2,3],[4,5,6],[7,8,9]])
+#    test(shared_array_main)
+#	#todo: share lock between process
+#    l_main = multiprocessing.Lock()
+#	#shared_value_base = multiprocessing.Value(multiprocessing.Lock, lock)
+
+#    pool = multiprocessing.Pool(processes=8, initializer=init, initargs=(shared_array_main,l_main,))
+#    pool.map(my_func, range(0,100))
+
+#    print shared_array_main

@@ -5,7 +5,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>09640503-ff27-4dc2-9879-63e680f20ed3</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>multiprocess.py</StartupFile>
+    <StartupFile>exe.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -22,6 +22,18 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="cython\cython_init.pyx">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="cython\cython_call.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="cython\cython_ini_setup.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="exe.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="list.py">
       <SubType>Code</SubType>
     </Compile>
@@ -37,10 +49,25 @@
     <Compile Include="multithread_threading.py">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="numpy_test.py">
+    <Compile Include="test_class.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="test_json.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="test_numpy.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="test_matplot.py">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="vs_python.py" />
+    <Compile Include="test_vtk.py">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="cython\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

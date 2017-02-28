@@ -1,0 +1,26 @@
+{
+	"price": "hello/aa", 
+	"name": "ACME",
+	"shares": "aa/asdad",
+	
+	"tifdat":"C:/Users/TuhuaF/Desktop/mygit/ctcloth-volume-mine/data/xiaosan_2017_2_18/result/tif.dat",
+	"tif_dir":"C:/Users/TuhuaF/Desktop/mygit/ctcloth-volume-mine/data/xiaosan_2017_2_18/after_wrap",
+	"result_dir":"C:/Users/TuhuaF/Desktop/mygit/ctcloth-volume-mine/data/xiaosan_2017_2_18/result/",
+
+	"s":1,
+	"t":2,
+	"h":16,
+	"ed":0.4,
+	"eJ":-70,
+	"nx":32,
+	"ny":32,
+	"nz":6,
+	"clip_x_min":200,
+	"clip_x_max":700,
+	"clip_y_min":200,
+	"clip_y_max":700,
+	"clip_z_min":0,
+	"clip_z_max":300,
+
+	"img_bit_value":255.0
+}

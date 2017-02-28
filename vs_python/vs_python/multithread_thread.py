@@ -1,5 +1,5 @@
 # http://python.jobbole.com/81255/
-# thread和threading，thread是低级模块，threading是高级模块，对thread进行了封装
+# thread锟斤拷threading锟斤拷thread锟角低硷拷模锟介，threading锟角高硷拷模锟介，锟斤拷thread锟斤拷锟斤拷锟剿凤拷装
 
 import thread as th
 

@@ -85,7 +85,22 @@ b = a[[True,False,True]] #=a[[1,0,1]]
 print "a",b
 
 #-----------
-x = np.random.rand(10) # ����һ������Ϊ10��Ԫ��ֵΪ0-1�������������\
+x = np.random.rand(10)
 print x
 print x>0.5
 print x[x>0.5]
+
+
+#-----colum or row major-------
+a = np.array([[1,2],
+			  [3,4],
+			  [5,6]])
+print a
+
+a = a.swapaxes(1,0)
+byte = a.tobytes()
+
+print a
+
+a = np.array([[0,1,2],[3,4,5],[6,7,8]], dtype=np.float32)
+print a
